@@ -8,7 +8,7 @@ alfabe_nimerik = alfabe + "0123456789"
 def kod_inik(longe: int, alfabe: str):
     """Sa a s on fonksyon jeneral, l ap ede n nan 2 lot fonksyon n ap gen pou n
     ekri yo."""
-    
+
     lis_karakte = []
     for i in range(longe):
         karakte = random.choice(alfabe)
@@ -78,5 +78,3 @@ def inisyal_nom(mo: str):
     Atansyon ak non konpoze ak tirè yo."""
 
     return "".join([ini[0] for ini in mo.replace("-", " ").split()])
-
-print(inisyal_nom("Jean-Baptiste JEAN"))
