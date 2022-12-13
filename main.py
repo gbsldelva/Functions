@@ -45,7 +45,7 @@ def jenere_slug(chenn: str):
 def separe_pa_vigil(mo: str):
     """Kreye yon fonksyon ki ap separe chak lèt nan yon mo ak yon vigil"""
     
-    return ",".join([letter for index, letter in enumerate(mo)])
+    return ",".join(list(mo))
 
 #7
 def kripte(mo: str):
@@ -66,11 +66,7 @@ def pemite(a, b):
     """Kreye yon fonksyon ki ap pran 2 paramèt, epi ki pèmite valè yo.
     Answit li retounen tou 2 valè yo sou fòm Tuple."""
 
-    temp = a
-    a = b
-    b = temp
-
-    return a, b
+    return b, a
 
 #10
 def inisyal_nom(mo: str):
